@@ -10,25 +10,26 @@
         <a-scene>
             <a-sky color = '#ebebeb' ></a-sky>
             <a-plane color="black" position="0 0 0" rotation="-90 0 0" width="20" height="10"></a-plane>
-            <a-circle
-            position="0 9.15 0"
-            color="orange"
-            radius="0.8"
-          >
-      </a-circle>
+
+          <a-circle position="0 9.15 0"color="orange" radius="0.8"
+          ></a-circle>
+
       <a-cylinder
         color="#757575"
         height="1.5"
         radius="0.05"
         position="0 10 0"
+        animation = 'property: position; from: -0.2 10 -0.1; to : 0.2 10 -0.1; easing:linear; dir:alternate; loop:true; dur: 1000'
       ></a-cylinder>
       <a-sphere
         color="#ef5350"
         radius="0.3"
         position="0 11 0"
+        animation = 'property: position; from: -0.2 11 -0.1; to: 0.2 11 -0.1; easing:linear; dir:alternate; loop:true; dur: 1000'
       ></a-sphere>
 
       <a-box
+        id="head"
         color="#0276aa"
         position="0 8 0"
         width="3.2"
@@ -36,6 +37,7 @@
       >
       </a-box>
 
+      <!-- Eyes -->
 
       <a-sphere
         color="#fff"
@@ -49,6 +51,7 @@
         color="#000"
         radius="0.15"
         position="-0.63 8.1 0.9"
+        animation = 'property: position; from: -0.63 8.1 0.9; to: -0.63 8.3 0.9;easing:linear; loop:true; dir: alternate; dur: 500'
       ></a-sphere>
 
       <a-sphere
@@ -58,13 +61,16 @@
         rotation="0 -10 0"
       >
       </a-sphere>
+
       <a-sphere
         color="#000"
         radius="0.15"
         position="0.63 8.1 0.9"
+        animation = 'property: position; from: 0.63 8.1 0.9; to: 0.63 8.3 0.9;easing:linear; loop:true; dir: alternate; dur: 500'
+
       ></a-sphere>
 
-       Mouth -->
+       <!-- Mouth --> 
       <a-entity
         position="0 8.2 0.55"
         rotation="0 0 120"
@@ -222,4 +228,4 @@
         </a-scene>
     </body>
 
-</html>
+</html>x
